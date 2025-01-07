@@ -21,7 +21,7 @@ class Header extends Component {
             <div className="col-12 col-lg-9 col-md-10 topnav">
               <nav>
                 <input type="checkbox" id="nav" className="hidden" />
-                <label for="nav" className="nav-open">
+                <label htmlFor="nav" className="nav-open">
                   <i></i>
                   <i></i>
                   <i></i>

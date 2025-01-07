@@ -188,12 +188,12 @@ function BlendIn() {
 
       {/* <!--    Default script--> */}
 
-      <script src="js/jquery-1.12.3.min.js"></script>
+      <script src="assets/js/jquery-1.12.3.min.js"></script>
 
       {/* <!-- Option 2: Separate Popper and Bootstrap JS --> */}
 
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
     </div>
   );
 }

@@ -1,14 +1,22 @@
 import React from "react";
-import Header from '../components/Header';
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BannerSection from "../components/BannerSection";
 import ContactusSection from "../components/ContactusSection";
+import QuotesCarousel from "../components/QuotesCarousel";
+import CountersSection from "../components/CountersSection";
+import $ from "jquery"; // Ensure you have jQuery installed: `npm install jquery`
+
+
+
+   
+
 
 function Index() {
   return (
     <div>
       <div className="wrapper home">
-        <BannerSection/>
+        <BannerSection />
 
         <div className="container-fluid Sectionpadding verticals">
           <div className="cardSlider__section">
@@ -155,135 +163,52 @@ function Index() {
 
         {/* circle graphic  Start  */}
 
-        <section className="Sectionpadding creemC">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-lg-6 col-md-12 ccim">
-                <img src="assets/images/3circle.svg" className="img-fluid" />
-              </div>
-              <div className="col-12 col-lg-6 col-md-12 text-center txtCreem">
-                <div id="carouselExampleInterval">
-                  <div className="carousel-inner">
-                    <div className="quotes">
-                      <p>
-                        “Blended finance is a powerful tool to mobilize private
-                        capital for SDGs.”
-                        <span>The World Bank Group</span>
-                      </p>
-
-                      <p>
-                        “Relying solely on philanthropy and govt funding cannot
-                        address transnational challenges... We must look towards
-                        blended finance solutions.”
-                        <span>ROCKEFELLER FOUNDATION</span>
-                      </p>
-
-                      <p>
-                        "Blended finance key to supporting India's energy
-                        transition given its ability to drive more private
-                        capital to high-impact climate projects."
-                        <span>IFC</span>
-                      </p>
-
-                      <p>
-                        “We need innovative finance solutions to deal with
-                        climate change, which could include blended finance and
-                        co-financing with the private sector”
-                        <span className="last-itm">
-                          Amitabh Kant, India’s G20 Sherpa
-                        </span>
-                      </p>
-                    </div>
-
-                    <div className="quotes">
-                      <p>
-                        “Blended finance is helping the public, private and
-                        nonprofit sectors collaborate on projects that would
-                        otherwise be very difficult to get off the ground”
-                        <span>Bank of America</span>
-                      </p>
-
-                      <p>
-                        "Capital deployed through blended finance structures can
-                        help address the SDG funding gap by enabling the entry
-                        of more conventional capital flows into products,
-                        companies, and funds which incorporate impact
-                        objectives"
-                        <span>The Global Impact Investment Network (GIIN)</span>
-                      </p>
-
-                      <p>
-                        "By mobilizing private capital, blended finance helps
-                        create additionality and human impact."
-                        <span className="last-itm">USAID</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <QuotesCarousel/>
 
         <section className="counters Sectionpadding">
-          <div className="container  text-center">
-            <h2>
-              Blended Finance Unlocks A $4.2 Trillion Development Opportunity
-            </h2>
-            <div className="row counterFx" id="counter">
-              <div>
-                <span className="orange">
-                  $
-                  <span className="count percent" data-count="200">
-                    20
-                  </span>{" "}
-                  Billion{" "}
-                </span>
-                <span className="green">Mobilized</span>
-              </div>
+         
+            
+         <div className="container  text-center">
+         
+         <h2>Blended Finance Unlocks A $4.2 Trillion Development Opportunity</h2>
+             
+             
+         <div className="row counterFx" id="counter">
+             
+             
+             
+           <div>
+             <span className="orange">$<span className="count percent" data-count="200">20</span> Billion </span> 
+             <span className="green">Mobilized</span>
+           </div>
+             
+             <div>
+                 <span className="orange"><span className="count percent" data-count="100">10</span>+ </span> 
+             <span className="green">Countries</span>
+           </div>
+             
+             <div>
+                 <span className="orange"><span className="count percent" data-count="1000">100</span>+ </span> 
+             <span className="green">Transactions</span>
+           </div>
+             
+             <div>
+                 <span className="orange"><span className="count percent" data-count="16">0</span> SDGs</span> 
+             <span className="green">Covered</span>
+           </div>
+             
+             <div>
+                 <span className="orange"><span className="count percent" data-count="4">0</span>x Leverage</span> 
+             <span className="green">on Concessional Capital</span>
+           </div>
+ 
+             </div>    
+             
+             
+         </div>
+     
 
-              <div>
-                <span className="orange">
-                  <span className="count percent" data-count="100">
-                    10
-                  </span>
-                  +{" "}
-                </span>
-                <span className="green">Countries</span>
-              </div>
-
-              <div>
-                <span className="orange">
-                  <span className="count percent" data-count="1000">
-                    100
-                  </span>
-                  +{" "}
-                </span>
-                <span className="green">Transactions</span>
-              </div>
-
-              <div>
-                <span className="orange">
-                  <span className="count percent" data-count="16">
-                    0
-                  </span>{" "}
-                  SDGs
-                </span>
-                <span className="green">Covered</span>
-              </div>
-
-              <div>
-                <span className="orange">
-                  <span className="count percent" data-count="4">
-                    0
-                  </span>
-                  x Leverage
-                </span>
-                <span className="green">on Concessional Capital</span>
-              </div>
-            </div>
-          </div>
-        </section>
+      </section>
 
         {/* counters section END   */}
 
@@ -332,7 +257,7 @@ function Index() {
                             <img
                               src="assets/images/Fin1-mob.jpg"
                               alt="Social-Stock-Exchange"
-                              style={{width:'auto'}}
+                              style={{ width: "auto" }}
                             />
                           </picture>
 
@@ -377,7 +302,7 @@ function Index() {
                             <img
                               src="assets/images/Fin2-mob.jpg"
                               alt="Public Finance Programs"
-                              style={{width:'auto'}}
+                              style={{ width: "auto" }}
                             />
                           </picture>
 
@@ -421,7 +346,7 @@ function Index() {
                             <img
                               src="assets/images/Fin3-mob.jpg"
                               alt="Private Finance Programs"
-                              style={{width:'auto'}}
+                              style={{ width: "auto" }}
                             />
                           </picture>
 
@@ -466,7 +391,7 @@ function Index() {
                             <img
                               src="assets/images/Fin4-mob.jpg"
                               alt="Outcome-Based Financing Innovations"
-                              style={{width:'auto'}}
+                              style={{ width: "auto" }}
                             />
                           </picture>
                           <figcaption>
@@ -516,21 +441,21 @@ function Index() {
         {/* CTA BFBB section  End       */}
 
         {/* Email ID section */}
-        <ContactusSection/>
+        <ContactusSection />
 
         {/* Email ID section  END  */}
 
         {/* footer section  */}
-        <Footer/>
+        <Footer />
       </div>
 
       {/* Default script */}
-      <script src="js/jquery-1.12.3.min.js"></script>
+      <script src="assets/js/jquery-1.12.3.min.js"></script>
       {/* Option 2: Separate Popper and Bootstrap JS  */}
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
       {/* image swipe effect for mobile script */}
-      <script src="js/swiper-bundle.min.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
     </div>
   );
 }

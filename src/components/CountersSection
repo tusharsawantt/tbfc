@@ -1,0 +1,60 @@
+// import React, {Component} from "react";
+// import CountUp from "react-countup";
+
+// const CountersSection = () => {
+//   const counters = [
+//     {
+//       prefix: "$",
+//       value: 200,
+//       suffix: " Billion",
+//       label: "Mobilized",
+//     },
+//     {
+//       value: 100,
+//       suffix: "+",
+//       label: "Countries",
+//     },
+//     {
+//       value: 1000,
+//       suffix: "+",
+//       label: "Transactions",
+//     },
+//     {
+//       value: 16,
+//       suffix: " SDGs",
+//       label: "Covered",
+//     },
+//     {
+//       value: 4,
+//       suffix: "x Leverage",
+//       label: "on Concessional Capital",
+//     },
+//   ];
+
+//   return (
+//     <section className="counters Sectionpadding">
+//       <div className="container text-center">
+//         <h2>Blended Finance Unlocks A $4.2 Trillion Development Opportunity</h2>
+//         <div className="row counterFx">
+//           {counters.map((counter, index) => (
+//             <div key={index} className="counter-item">
+//               <span className="orange">
+//                 {counter.prefix && counter.prefix} {/* Conditionally render prefix */}
+//                 <CountUp
+//                   start={0}
+//                   end={counter.value}
+//                   duration={2.5} // Adjust duration for a smooth count
+//                   suffix={counter.suffix}
+//                   separator="," // Adds commas for large numbers
+//                 />
+//               </span>
+//               <span className="green">{counter.label}</span>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default CountersSection;
